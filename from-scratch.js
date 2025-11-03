@@ -20,7 +20,15 @@ const getStringLengths = (strings) => {
 console.log(getStringLengths(sampleWords));
 // Problem 3
 const sortWordsZtoA = (words) => {
-  return words.sort();
+  return words.sort((a, b) => {
+    if (a > b) {
+      return -1;
+    } else if (b > a) {
+      return 1
+    } else {
+      return 0;
+    }
+  });
 };
 sortWordsZtoA(sampleWords);
 console.log(sampleWords);
