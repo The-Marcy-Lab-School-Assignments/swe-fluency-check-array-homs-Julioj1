@@ -78,9 +78,11 @@ console.log(getActiveUsersUnder30(sampleUsers));
 
 // Problem 9
 const getTotalScore = (users) => {
-
+  return users.reduce((totalScore, currentScore) => {
+    return totalScore + currentScore.score;
+  }, 0)
 };
-
+console.log(getTotalScore(sampleUsers));
 // Problem 10
 const sortUsersByScoreDescending = (users) => {
 
