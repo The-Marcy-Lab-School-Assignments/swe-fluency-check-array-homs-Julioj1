@@ -10,19 +10,20 @@ const sampleWords = ['dog', 'blueberry', 'alabama', 'earth', 'football'];
 
 // Problem 1
 const printEveryWord = (words) => {
-
+  words.map((word) => console.log(word))
 };
-
+printEveryWord(sampleWords);
 // Problem 2
 const getStringLengths = (strings) => {
-
+  return strings.map((string) => string.length)
 };
-
+console.log(getStringLengths(sampleWords));
 // Problem 3
 const sortWordsZtoA = (words) => {
-
+  return words.sort();
 };
-
+sortWordsZtoA(sampleWords);
+console.log(sampleWords);
 /* -------------------------------------------- */
 /* --------------NUMBER PROBLEMS--------------- */
 /* -------------------------------------------- */
@@ -31,14 +32,20 @@ const sampleNumbers = [7, 3, 9, 1, 4, 8, 2, 10, 5, 6];
 
 // Problem 4
 const getEvenNumbers = (nums) => {
-
+  return nums.filter((num) => num % 2 === 0)
 };
-
+console.log(getEvenNumbers(sampleNumbers));
 // Problem 5
 const getLargestNumber = (numbers) => {
-
+  return numbers.reduce((a, b) => {
+    if (a > b) {
+      return a;
+    } else {
+      return b
+    }
+  })
 };
-
+console.log(getLargestNumber(sampleNumbers));
 /* -------------------------------------------------- */
 /* --------------OBJECT ARRAY PROBLEMS--------------- */
 /* -------------------------------------------------- */
