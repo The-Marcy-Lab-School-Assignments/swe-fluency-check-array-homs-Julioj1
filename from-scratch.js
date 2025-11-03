@@ -60,9 +60,9 @@ const sampleUsers = [
 
 // Problem 6
 const printUserNamesAndScores = (users) => {
-
+  return users.map((user) => console.log(`${user.name} scored ${user.score} points.`))
 };
-
+printUserNamesAndScores(sampleUsers);
 
 // Problem 7
 const getUserNames = (users) => {
